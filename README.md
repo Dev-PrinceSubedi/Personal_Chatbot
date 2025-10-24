@@ -2,7 +2,7 @@
 
 PersonalChatBot is a sleek, mobile‑responsive chat application built with React and Vite, powered by Google Gemini. It delivers fast conversational AI with a clean UI, per‑conversation history (titled by the first message), and a polished dark/light theme.
 
-##Live Demo: https://personal-chatbot-llm-b3c75e.netlify.app/
+## Live Demo: https://personal-chatbot-llm-b3c75e.netlify.app/
 
 ## 🚀 Features
 - Real‑time AI chat with responsive streaming UI
