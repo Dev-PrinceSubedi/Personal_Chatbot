@@ -1,0 +1,121 @@
+.sidebar{
+    padding: 20px 20px;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--background-color);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    font-size: 20px;
+    scrollbar-width: none; 
+}
+
+.sidebar svg{
+    width: 30px;
+    height: 30px;
+    color: var(--color);
+
+}
+
+#ham{
+    margin-left: 10px;
+
+}
+
+.newchat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background-color: rgb(126, 123, 123);
+    padding: 12px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+.recent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding: 15px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
+    
+}
+
+.recent:hover{
+    background-color: rgb(57, 54, 54);
+    
+    
+}
+
+.newchat:hover{
+    background-color: rgb(57, 54, 54);
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: var(--btn-background-color);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    color: var(--btn-color);
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: flex;
+      }
+    
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: var(--background-color);
+        transform: translateX(-100%); /* slide from left */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+      }
+    
+      .sidebar.show {
+        transform: translateX(0);
+      }
+    
+      .sidebar.hide {
+        transform: translateX(-100%);
+      }
+
+      .chatsection {
+        padding-top: 70px; 
+      }
+
+      /* Optional: dark backdrop behind the menu */
+      .backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 900;
+      }
+}

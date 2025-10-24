@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+#root{
+  display: flex;
+}
+
+.lightmode{
+  --color: black;
+  --background-color: white;
+  --btn-background-color: black;
+  --btn-color: white;
+  --hover-btn-background-color: rgb(57, 54, 54); 
+}
+
+.darkmode{
+  --color: white;
+  --background-color: rgb(23, 22, 22);
+  --btn-background-color: white;
+  --btn-color: black;
+  --hover-btn-background-color: rgb(57, 54, 54);
+  
+}
+
+@media (max-width: 600px) {
+  .seperation{
+    display: none;
+  }
+  html, body {
+    height: 100dvh;    
+    overflow: hidden;         
+    overscroll-behavior: none;
+  }
+  #root {
+    height: 100%;
+  }
+
+  
+  
+}
+ 
