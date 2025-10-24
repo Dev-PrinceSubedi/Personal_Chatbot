@@ -21,6 +21,7 @@ PersonalChatBot is a sleek, mobile‑responsive chat application built with Reac
 - React Context API (global state for messages, history, conversations)
 - React Icons
 - CSS3 (variables, Flexbox, responsive media queries)
+- Deployment: Netlify
 
 ## 🔑 Key Components
 - Chat UI: message list, loaders, prompt input, send on Enter
